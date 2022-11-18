@@ -1,9 +1,9 @@
 <span><h3>Liczba Kursów: 3</h3></span>
-<ol>
-  <li>Programowanie w C#</li>
-  <li>Angular dla poczatkujacych</li>
-  <li>Kurs Django</li>
-</ol>
+<div >
+  <ol>
+    <li *ngFor="let data of array">{{data}}</li>
+  </ol>
+</div>
 <span><p>Imie i Nazwisko</p></span>
 <div class="input-group mb-3">
   <input [(ngModel)]="daneKursanta" type="text" class="form-control">
